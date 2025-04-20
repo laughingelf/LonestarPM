@@ -13,7 +13,7 @@ const Services = () => {
           backgroundImage: "url('/img/lspm-header2.png')",
           backgroundSize: 'cover', // Ensures image covers full screen
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed' // Keeps the image fixed while scrolling
+          // backgroundAttachment: 'fixed' // Keeps the image fixed while scrolling
         }}
       >
         {/* <ScrollingGallery/> */}
