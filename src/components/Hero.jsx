@@ -22,28 +22,28 @@ const HeroSection = () => {
                 {/* Card 1 */}
                 <Link class='service-cards' to='/contact'>
                     <div className="h-full flex flex-col rounded-xl p-6 text-center ">
-                        <h3 style={{fontFamily: 'Rye, serif'}} className="md:text-2xl text-xl font-bold text-red-600 underline mb-2">Pressure Washing</h3>
+                        <h3 style={{fontFamily: 'Rye, serif'}} className="md:text-2xl text-xl font-bold text-red-600 underline mb-2 text-shadow-lg">Pressure Washing</h3>
                         <p className="text-md text-black">Revitalize driveways, patios, and exteriors with our deep-clean pressure washing services.</p>
                     </div>
                 </Link>
                 {/* Card 2 */}
                 <Link class='service-cards' to='/contact'>
                     <div className="h-full flex flex-col rounded-xl p-6 text-center ">
-                        <h3 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline font-bold mb-2">Auto/Boat Detailing</h3>
+                        <h3 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline font-bold mb-2 text-shadow-lg">Auto/Boat Detailing</h3>
                         <p className="text-md text-black">Professional detailing for vehicles and boats. We bring back that showroom shine inside and out—perfect for personal or resale use.</p>
                     </div>
                 </Link>
                 {/* Card 3 */}
                 <Link class='service-cards' to='/contact'>
                     <div className="h-full flex flex-col rounded-xl p-6 text-center">
-                        <h3 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline font-bold mb-2">Fencing & Maintenance</h3>
+                        <h3 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline font-bold mb-2 text-shadow-lg">Fencing & Maintenance</h3>
                         <p className="text-md text-black">Professional fence installs and property maintenance to keep your place looking sharp.</p>
                     </div>
                 </Link>
                 {/* Card 4 */}
                 <Link class='service-cards' to='/contact'>
                     <div className="h-full flex flex-col  rounded-xl p-6 text-center">
-                        <h3 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline font-bold mb-2">Haul-Off Services</h3>
+                        <h3 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline font-bold mb-2 text-shadow-lg">Haul-Off Services</h3>
                         <p className="text-md text-black">Quick and reliable junk removal, clean-up, and haul-off jobs for homes and businesses.</p>
                     </div>
                 </Link>

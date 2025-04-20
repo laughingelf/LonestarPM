@@ -7,18 +7,18 @@ const Contact = () => {
       <Navbar />
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/img/mission.jpg')" }}
+        style={{ backgroundImage: "url('/img/lspm-header2.png')" }}
       >
         <div className="py-10">
-          <div className="bg-gray-900 text-white py-10 px-6 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <h2 className="text-2xl font-semibold mb-6 text-center">Request a Free Quote</h2>
+          <div className="bg-gray-200 text-black py-10 px-6 rounded-lg shadow-lg max-w-3xl mx-auto">
+            <h2 style={{fontFamily: 'Rye, serif'}} className="text-xl text-red-600 underline text-shadow-lg font-semibold mb-6 text-center">Request a Free Quote</h2>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
               <div>
                   <label className="block mb-1 font-medium">Name</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                     required
                   />
                 </div>
@@ -26,7 +26,7 @@ const Contact = () => {
                   <label className="block mb-1 font-medium">Email</label>
                   <input
                     type="email"
-                    className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                     required
                   />
                 </div>
@@ -34,7 +34,7 @@ const Contact = () => {
                   <label className="block mb-1 font-medium">Phone Number</label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                     required
                   />
                 </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                 <label className="block mb-1 font-medium">Address</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 />
               </div>
@@ -53,7 +53,7 @@ const Contact = () => {
                 <label className="block mb-1 font-medium">Description of the Job</label>
                 <textarea
                   rows="4"
-                  className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 ></textarea>
               </div>
@@ -61,7 +61,7 @@ const Contact = () => {
               <div>
                 <label className="block mb-1 font-medium">How soon do you need the job completed?</label>
                 <select
-                  className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 >
                   <option value="">Select timeframe</option>
@@ -77,14 +77,14 @@ const Contact = () => {
                 <input
                   type="file"
                   multiple
-                  className="w-full file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 bg-gray-900 text-white"
+                  className="rounded-md shadow-lg w-full file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 bg-white text-black"
                 />
               </div>
 
               <div>
                 <label className="block mb-1 font-medium">How did you hear about us?</label>
                 <select
-                  className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 rounded-md bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 >
                   <option value="">Select an option</option>
@@ -99,7 +99,7 @@ const Contact = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-white font-semibold transition"
+                  className="shadow-lg bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-white font-semibold transition"
                 >
                   Submit Request
                 </button>

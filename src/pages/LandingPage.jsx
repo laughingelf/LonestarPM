@@ -22,15 +22,15 @@ function LandingPage() {
                         </div>
 
                         {/* Card */}
-                        <div className="bg-white border-2 border-black rounded-2xl shadow-md p-6 sm:p-8 max-w-xl text-black text-center">
-                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline sm:text-3xl font-bold mb-4">Why We Do What We Do</h2>
+                        <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 max-w-xl text-black text-center">
+                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 underline sm:text-3xl font-bold mb-4 text-shadow-lg">Why We Do What We Do</h2>
                             <p className="text-base sm:text-lg leading-relaxed text-left">
-                            At Lonestar Pressure Washing, we take pride in being a family-owned and operated business based in Fort Worth, Texas, 
+                            At Lonestar Property Management, we take pride in being a family-owned and operated business based in Fort Worth, Texas, 
                             proudly serving DFW and surrounding areas. Built on strong values, hard work, and a commitment to customer satisfaction, 
                             we treat every property like it’s our own—because when you choose Lonestar, you're part of the family.
                             <br /><br />
                             No job is too big or too small—we bring the same attention to detail and professionalism to every project. Whether you're
-                             a homeowner looking to refresh your driveway, or a business in need of regular property maintenance, Lonestar Pressure Washing
+                             a homeowner looking to refresh your driveway, or a business in need of regular property maintenance, Lonestar Property Management
                               is your one-stop solution.
                             </p>
 
@@ -56,8 +56,8 @@ function LandingPage() {
                 <section className="px-4 py-8">
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
                         
-                        <div className="bg-white text-center border-2 border-black rounded-2xl shadow-lg p-6">
-                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline">Quick Quotes, No Hassle</h2>
+                        <div className="bg-white text-center rounded-lg shadow-lg p-6">
+                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline text-shadow-lg">Quick Quotes, No Hassle</h2>
                             <p className="text-gray-700 mb-4 text-left">
                                 At Lonestar Property Mangement, we make it easy to get fast and reliable estimates for all of your exterior
                                 cleaning and maintenance needs. Whether you're looking for pressure washing, soft washing, fencing installation,
@@ -67,8 +67,8 @@ function LandingPage() {
                             </p>
                         </div>
 
-                        <div className="bg-white text-center border-2 border-black rounded-2xl shadow-lg p-6">
-                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline">Trusted By Our Community</h2>
+                        <div className="bg-white text-center rounded-lg shadow-lg p-6">
+                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline text-shadow-lg">Trusted By Our Community</h2>
                             <p className="text-gray-700 text-left">
                             At Lonestar Property Management, we’re proud to be a locally owned and operated Texas business that our neighbors trust. From 
                             residential homeowners to local business owners, our clients choose us time and time again for our honest service, fair pricing, 
@@ -79,10 +79,10 @@ function LandingPage() {
                             </p>
                         </div>
 
-                        <div className="bg-white text-center border-2 border-black rounded-2xl shadow-lg p-6">
-                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline">We are reliable</h2>
+                        <div className="bg-white text-center rounded-lg shadow-lg p-6">
+                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline text-shadow-lg">We are reliable</h2>
                             <p className="text-gray-700 mb-4 text-left">
-                            At Lonestar Pressure Washing, reliability is at the core of everything we do. Our experienced team is dedicated to providing exceptional
+                            At Lonestar Property Management, reliability is at the core of everything we do. Our experienced team is dedicated to providing exceptional
                              results on every project, no matter the size. Whether it's a routine pressure washing job, soft washing delicate surfaces, or sealing
                               concrete to protect your investment, we take pride in our punctuality, professionalism, and attention to detail. We use top-of-the-line 
                               equipment and eco-friendly products to ensure the job is done right the first time. You can count on us for dependable service, clear communication,
@@ -90,10 +90,10 @@ function LandingPage() {
                             </p>
                         </div>
 
-                        <div className="bg-white text-center border-2 border-black rounded-2xl shadow-lg p-6">
-                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline">We treat your property like our own.</h2>
+                        <div className="bg-white text-center rounded-lg shadow-lg p-6">
+                            <h2 style={{fontFamily: 'Rye, serif'}} className="text-2xl text-red-600 font-semibold mb-2 underline text-shadow-lg">We treat your property like our own.</h2>
                             <p className="text-gray-700 mb-4 text-left">
-                            At Lonestar Pressure Washing, we understand that your property is a valuable investment, and we treat it with the utmost care and respect. Whether
+                            At Lonestar Property Management, we understand that your property is a valuable investment, and we treat it with the utmost care and respect. Whether
                              we are pressure washing your driveway, cleaning your roof, or detailing your boat, we approach every job with the same level of attention to detail
                               as if it were our own home. Our team is fully trained to ensure that your property is protected throughout the process. We use safe, non-damaging 
                               techniques and equipment to ensure that nothing is harmed, leaving your property looking spotless and well-maintained. Your satisfaction and peace
@@ -108,7 +108,7 @@ function LandingPage() {
                     style={{fontFamily: 'Rye, serif'}}
                     id="call-button"
                     to="/contact"
-                    className="text-black text-2xl font-semibold px-6 py-3 rounded-lg shadow-md transition"
+                    className="text-black text-2xl font-semibold px-6 py-3 rounded-lg shadow-md transition text-shadow-lg"
                     // text-white text-2xl bg-red-600 hover:bg-red-700
                     >
                     Get Your Free Quote
