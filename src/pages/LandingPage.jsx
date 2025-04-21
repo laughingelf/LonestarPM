@@ -20,7 +20,6 @@ function LandingPage() {
                                 <img
                                 src="/img/mission.jpg" // replace with your image path
                                 alt="Mission-img"
-                                loading="eager"
                                 className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-xl border-2 border-black"
                                 />
                             </picture>
