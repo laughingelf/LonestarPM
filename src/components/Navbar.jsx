@@ -17,12 +17,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full bg-gray-500 text-white px-4 py-3 shadow-md">
+    <nav id='navbar'>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo + Brand */}
         <div className="flex items-center gap-3">
         <img className='h-12 w-auto' src='/img/nav-mascot.svg' />
-        <Link to="/home" style={{fontFamily: 'Rye, serif'}} className=" py-2 underline hover:text-gray-400 hover:underline text-shadow-lg">Lonestar Property Management</Link>
+        <Link to="/home">Lonestar Property Management</Link>
         </div>
 
         {/* Hamburger Button */}
@@ -38,13 +38,13 @@ export default function Navbar() {
           ref={menuRef}
           className={`${
             isOpen ? 'flex bg-gray-500' : 'hidden'
-          } flex-col absolute top-16 left-0 w-full  z-50 transition-all duration-300 ease-in-out sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto`}
+          } flex-col pl-4 absolute top-16 left-0 w-full  z-50 transition-all duration-300 ease-in-out sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto`}
         >
-          <Link to="/home" style={{fontFamily: 'Rye, serif'}} className="px-4 py-2 hover:text-gray-400 hover:underline text-shadow-lg">Home</Link>
-          <Link to="/about-us" style={{fontFamily: 'Rye, serif'}} className="px-4 py-2 hover:text-gray-400 hover:underline text-shadow-lg">About Us</Link>
+          <Link to="/home">Home</Link>
+          <Link to="/about-us">About Us</Link>
           {/* <Link to="/testimonials" className="px-4 py-2 hover:text-gray-400">Testimonials</Link> */}
-          <Link to="/services" style={{fontFamily: 'Rye, serif'}} className="px-4 py-2 hover:text-gray-400 hover:underline text-shadow-lg">Services</Link>
-          <Link to="/contact" style={{fontFamily: 'Rye, serif'}} className="px-4 py-2 hover:text-gray-400 hover:underline text-shadow-lg">Contact Us</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
     </nav>

@@ -29,6 +29,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#navbar {
+  width: 100%;
+  background-color: rgb(107, 114, 128);
+  color: white;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "Rye", serif;
+}
+
+#navbar a {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+#navbar a:hover {
+  color: rgb(156, 163, 175);
+  text-decoration: underline;
+}
+
 #call-button {
   background-image: url('/img/flag2.svg');
   background-repeat: no-repeat;
@@ -36,6 +58,29 @@
   background-position: center;
   border: solid;
   border-width: 2px;
+  font-family: 'Rye', serif;
+  font-size: 2.5vw;
+  color: black;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  transition: all 300px;
+}
+
+@media (max-width: 1080px) {
+  #call-button {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #call-button {
+    font-size: 5vw;
+  }
 }
 
 #call-button:hover {
@@ -44,6 +89,90 @@
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 10px gray;
+}
+
+#hero-head {
+  font-family: "Rye", serif;
+  color: rgb(240,248,255);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#hero-head h1 {
+  font-size: 6vw;
+  line-height: 1;
+  margin-bottom: .5rem;
+}
+
+#hero-head h3 {
+  font-size: 3vw;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  #hero-head h1 {
+    font-size: 8vw;
+  }
+
+  #hero-head h3 {
+    font-size: 4vw;
+  }
+  #landing-card h2 {
+    font-size: 6.5vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  #hero-head h1 {
+    font-size: 8vw;
+  }
+}
+
+#hero-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#about-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-image: url('/img/lspm-header2.png');
+}
+
+#about-hero h1 {
+  font-family: "Rye", serif;
+  font-size: 4vw;
+  margin-bottom: .5rem;
+}
+
+#about-hero p {
+  font-size: 2vw;
+}
+
+@media (max-width: 1080px) {
+  #about-hero h1 {
+    font-size: 5vw;
+  }
+  #about-hero p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-hero h1 {
+    font-size: 8vw;
+  }
+  #about-hero p {
+    font-size: 5vw;
+  }
 }
 
 .service-cards {
@@ -55,6 +184,30 @@
   padding-right: 16px;
 }
 
+.service-cards h3 {
+  font-family: 'Rye', serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(220, 38, 38);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  text-decoration: underline;
+}
+
+.service-cards p {
+  color: black;
+  font-size: medium;
+}
+
+.service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+}
+
 #mission-text {
   background-color: whitesmoke;
 }
@@ -64,8 +217,175 @@
   background-image: url('/img/flag2.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 500ms;
 }
 
+#landing-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  #landing-img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+#landing-card,
+#about-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+  padding: 2rem;
+  max-width: 36rem;
+  color: black;
+}
+
+#landing-card h2,
+#about-card h2,
+#services h2,
+#contact-title h2 {
+  font-family: "Rye", serif;
+  font-size: 3vw;
+  text-align: center;
+  color: rgb(220, 38, 38);
+  text-shadow: 0 10px 15px rgba(0, 10, 0, 0.333);
+  text-decoration: underline;
+  margin-bottom: .5rem;
+}
+
+#landing-card p,
+#about-card p {
+  text-align: left;
+  font-size: large;
+  line-height: 1.2;
+}
+
+#landing-card button,
+#about-card a,
+#buttons a {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  background-color: rgb(25, 0, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 10rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+
+#landing-card button:hover,
+#about-card a:hover,
+#buttons a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(220, 38, 38);
+  transition: all 300ms;
+}
+
+#quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quality h1 {
+  font-family: "Rye", serif;
+  color:rgb(253, 11, 11);
+  text-align: center;
+  margin-bottom: 4rem;
+  text-shadow: 0 10px 15px rgba(0, 10, 0, 0.333);
+  font-size: 5vw;
+}
+
+@media (max-width: 1080px) {
+  #landing-card h2,
+  #about-card h2,
+  #services h2,
+  #contact-title h2 {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #landing-card h2,
+  #about-card h2,
+  #services h2,
+  #contact-title h2 {
+    font-size: 5.2vw;
+  }
+  #landing-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #quality h1 {
+    font-size: 7vw;
+  }
+}
+
+.landing-info {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+.landing-info h2,
+.service h3 {
+  font-family: "Rye", serif;
+  color: rgb(220, 38, 38);
+  font-size: 2vw;
+  text-decoration: underline;
+  text-shadow: 0 10px 15px rgba(0, 10, 0, 0.333);
+  text-align: center;
+  margin-bottom: .7rem;
+}
+
+.landing-info p {
+  color: black;
+  margin-bottom: 1rem;
+  font-size: medium;
+}
+
+@media (max-width: 1080px) {
+  .landing-info h2,
+  .service h3 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-info h2,
+  .service h3 {
+    font-size: 5.2vw;
+  }
+}
+
+.service {
+  background-color: white;
+  color: black;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+.service p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .scrollbar-hide::-webkit-scrollbar {
     display: none;

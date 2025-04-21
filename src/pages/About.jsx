@@ -9,15 +9,10 @@ const About = () => {
       <Navbar />
       <div>
 
-        <section
-          className="bg-cover bg-center bg-no-repeat text-white"
-          style={{
-            backgroundImage: `url('/img/lspm-header2.png')`, // Replace with your image path
-          }}
-        >
+        <section id='about-hero'>
           <div className="bg-black/60 w-full h-full">
             <div className="max-w-5xl mx-auto text-center px-4 py-16 sm:py-20">
-              <h1 style={{fontFamily: 'Rye, serif'}} className="text-3xl sm:text-4xl font-bold mb-4">About Us</h1>
+              <h1>About Us</h1>
               <p className="text-base sm:text-lg max-w-2xl mx-auto">
                 Lonestar Property Management is built on trust, hard work, and Texas pride. Learn about our mission and how we serve our community.
               </p>
@@ -29,7 +24,7 @@ const About = () => {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-8">
 
             {/* Image Section */}
-            <div className="w-full lg:w-1/2 flex-1">
+            <div id="landing-img">
               <img
                 src="/img/mission.jpg"
                 alt="Mission"
@@ -38,26 +33,29 @@ const About = () => {
             </div>
 
             {/* Text Section */}
-            <div className="w-full lg:w-1/2 flex-1 bg-white bg-opacity-80 text-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
-              <div className="text-black">
-                <h2 style={{fontFamily: 'Rye, serif'}} className="text-3xl font-semibold mb-6 text-center text-shadow-lg text-red-600 lg:text-left">Who We Are</h2>
-                <p className="text-lg text-center lg:text-left mb-6">
+            <div id="about-card">
+              <div>
+                <h2>Who We Are</h2>
+                <p>
                   At Lonestar Property Management, we're proud to be a family-owned and operated business based in Fort Worth, Texas. We 
                   serve the DFW area and the surrounding communities, bringing our passion for quality work and customer service to every 
                   job. Our values are rooted in hard work, honesty, and the desire to make a positive impact on the properties we service. 
                   We believe in treating every home and business like it's our own, ensuring you get the highest level of care and attention.
                 </p>
-                <p className="text-lg text-center lg:text-left mb-6">
+                <br/>
+                <p>
                   No project is too large or too small for us—whether it's restoring the beauty of a residential driveway or providing ongoing 
                   maintenance for commercial properties, we approach each task with the same commitment to excellence. Lonestar Pressure Washing 
                   is your trusted partner for all things property maintenance, offering solutions that fit your needs and budget.
                 </p>
-                <p className="text-lg text-center lg:text-left mb-6">
+                <br/>
+                <p>
                   As Texans, we have deep roots in this community. Being born and raised here, we understand the unique demands of maintaining 
                   homes and businesses in our climate. From the hot summer sun to the occasional Texas storm, we know how important it is to keep 
                   your property looking its best year-round. We’re here to help you with that, every step of the way.
                 </p>
-                <p className="text-lg text-center lg:text-left">
+                <br/>
+                <p>
                   Whether you're looking to refresh your property’s exterior, maintain its value, or tackle a large-scale project, our services are 
                   designed to meet your needs. We take pride in our attention to detail and strive to exceed your expectations with every job.
                 </p>
@@ -65,16 +63,10 @@ const About = () => {
 
               {/* Buttons */}
               <div className="mt-8 text-center flex flex-col items-center sm:flex-row sm:justify-center lg:justify-start gap-4">
-                <Link
-                  to='/contact'
-                  className=" w-48 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-white font-semibold transition"
-                >
+                <Link to='/contact'>
                   Request a Free Quote
                 </Link>
-                <a
-                  href="tel:1234567890"
-                  className="w-48 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-white font-semibold transition"
-                >
+                <a href="tel:1234567890">
                   Call Us: (123) 456-7890
                 </a>
               </div>
@@ -84,9 +76,9 @@ const About = () => {
         </section>
 
         <section>
-          <div className="flex justify-center items-center">
+          <div id="quality">
               {/* <img src="/img/smalltown.svg" className="w-3/4 h-auto" /> */}
-              <h1 style={{fontFamily: 'Rye, serif'}} className="text-black text-5xl text-center mb-16 text-red-600 text-shadow-lg">High-Quality Services At Honest,<br/> Affordable Prices</h1>
+              <h1>High-Quality Services At Honest,<br/> Affordable Prices</h1>
           </div>
         </section>
 
@@ -97,8 +89,8 @@ const About = () => {
               
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
                 {/* Image */}
-                <div className="w-full lg:w-1/2 max-w-sm mx-auto">
-                  <img src="/img/mission.jpg" alt="Our Mission" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+                <div id="landing-img">
+                  <img src="/img/mission.jpg" alt="Our Mission"  />
                 </div>
 
                 {/* Text Content */}
