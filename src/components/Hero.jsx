@@ -7,9 +7,19 @@ const HeroSection = () => {
 
     return (
 
-        <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url('/img/lspm-header2.png')" }}>
+        <section className="relative w-full h-screen " >
+             {/* Background Image Behind Cards */}
+             <picture>
+                <source media="(min-width: 1024px)" srcSet="/img/lspm-header2.webp" />
+                <source media="(max-width: 640)" srcSet="/img/lspm-header2-sm.webp" />
+                <img 
+                    src="/img/lspm-header2.png" 
+                    alt="Lonestar Property Management" 
+                    className="absolute inset-0 w-full h-full object-cover z-0" 
+                />
+             </picture>
             {/* Overlay */}
-            <div id="hero-cards" className="bg-black/40 absolute inset-0">
+            <div id="hero-cards" className="bg-black/40 absolute inset-0 z-10">
                 {/* Headline */}
                 <div id="hero-head">
                 <h1>Lonestar Property Management</h1>
