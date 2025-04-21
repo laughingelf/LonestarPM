@@ -17,7 +17,6 @@ const HeroSection = () => {
                     type='image/png'
                     alt="Lonestar Property Management" 
                     className="absolute inset-0 w-full h-full object-cover z-0" 
-                    loading="eager"
                 />
              </picture>
             {/* Overlay */}
