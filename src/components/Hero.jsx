@@ -24,7 +24,7 @@ const HeroSection = () => {
                 {/* Headline */}
                 <div id="hero-head">
                 <h1>Lonestar Property Management</h1>
-                <h3>Property Maintenance You Can Count On</h3>
+                <h2>Property Maintenance You Can Count On</h2>
                 {/* <p className="text-lg md:text-xl max-w-2xl">Serving Texas with professional power washing, soft washing, haul-offs, fencing, and more.</p> */}
                 </div>
 
