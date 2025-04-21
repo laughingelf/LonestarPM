@@ -37,7 +37,7 @@ const ScrollingGallery = () => {
           <div key={i} className="flex-shrink-0 rounded-lg ">
             <img
               id='gallery-img'
-              loading='lazy'
+              loading='eager'
               src={`/img/gal${i + 1}.jpg`}
               alt={`Gallery ${i + 1}`}
               className=" rounded-lg object-cover shadow-lg"
