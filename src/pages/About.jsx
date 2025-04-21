@@ -71,8 +71,8 @@ const About = () => {
                 <Link to='/contact'>
                   Request a Free Quote
                 </Link>
-                <a href="tel:1234567890">
-                  Call Us: (123) 456-7890
+                <a href="tel:8178793087">
+                  Call Us: (817) 879-3087
                 </a>
               </div>
             </div>

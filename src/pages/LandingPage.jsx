@@ -45,9 +45,9 @@ function LandingPage() {
                                         Get a Free Estimate
                                     </button>
                                 </Link>
-                                <a href="tel:1234567890">
+                                <a href="tel:8178793087">
                                     <button>
-                                        Call Us: (123) 456-7890
+                                        Call Us: (817) 819-3087
                                     </button>
                                 </a>
                             </div>

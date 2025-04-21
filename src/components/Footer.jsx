@@ -16,10 +16,10 @@ const Footer = () => {
             <div className="flex gap-4 flex-wrap justify-center">
               <Link to='/contact' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md transition">Get a Free Quote</Link>
               <a
-                href="tel:1234567890"
+                href="tel:8178793087"
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-md transition"
               >
-                Call Us: (123) 456-7890
+                Call Us: (817) 878-3087
               </a>
             </div>
           </div>
