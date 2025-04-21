@@ -11,11 +11,12 @@ const HeroSection = () => {
              {/* Background Image Behind Cards */}
              <picture>
                 <source media="(min-width: 1024px)" srcSet="/img/lspm-header2.webp" />
-                <source media="(max-width: 640)" srcSet="/img/lspm-header2-sm.webp" />
+                <source media="(min-width: 640)" srcSet="/img/lspm-header2-sm.webp" />
                 <img 
-                    src="/img/lspm-header2.png" 
+                    src="/img/lspm-header2-sm.png" 
                     alt="Lonestar Property Management" 
                     className="absolute inset-0 w-full h-full object-cover z-0" 
+                    loading="eager"
                 />
              </picture>
             {/* Overlay */}
