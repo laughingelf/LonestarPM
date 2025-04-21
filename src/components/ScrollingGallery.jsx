@@ -34,11 +34,13 @@ const ScrollingGallery = () => {
         className="flex space-x-4 overflow-x-scroll scrollbar-hide scroll-smooth py-4 px-8"
       >
         {[...Array(23)].map((_, i) => (
-          <div key={i} className="flex-shrink-0 w-64 h-48 rounded-lg ">
+          <div key={i} className="flex-shrink-0 rounded-lg ">
             <img
+              id='gallery-img'
+              loading='lazy'
               src={`/img/gal${i + 1}.jpg`}
               alt={`Gallery ${i + 1}`}
-              className="w-64 h-48 rounded-lg object-cover border-2 border-black shadow-lg"
+              className=" rounded-lg object-cover shadow-lg"
             />
           </div>
         ))}
