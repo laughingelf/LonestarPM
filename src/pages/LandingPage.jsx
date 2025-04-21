@@ -47,7 +47,7 @@ function LandingPage() {
                                 </Link>
                                 <a href="tel:8178793087">
                                     <button>
-                                        Call Us: (817) 819-3087
+                                        Call Us: (817) 879-3087
                                     </button>
                                 </a>
                             </div>

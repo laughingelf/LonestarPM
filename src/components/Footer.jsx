@@ -19,7 +19,7 @@ const Footer = () => {
                 href="tel:8178793087"
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-md transition"
               >
-                Call Us: (817) 878-3087
+                Call Us: (817) 879-3087
               </a>
             </div>
           </div>
