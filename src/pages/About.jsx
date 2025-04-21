@@ -25,11 +25,16 @@ const About = () => {
 
             {/* Image Section */}
             <div id="landing-img">
+            <picture>
+              <source srcSet="/img/mission.webp" type="image/webp" />
+
               <img
-                src="/img/mission.jpg"
-                alt="Mission"
-                className="rounded-lg shadow-lg w-full h-full object-cover"
+              src="/img/mission.jpg" // replace with your image path
+              alt="Mission-img"
+              loading="eager"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-xl border-2 border-black"
               />
+              </picture>
             </div>
 
             {/* Text Section */}
