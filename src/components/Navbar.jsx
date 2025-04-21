@@ -21,13 +21,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo + Brand */}
         <div className="flex items-center gap-3">
-        <img className='h-12 w-auto' src='/img/nav-mascot.svg' />
+        <img className='h-12 w-auto' src='/img/nav-mascot.svg' alt='Lonestar Mascot' />
         <Link to="/home">Lonestar Property Management</Link>
         </div>
 
         {/* Hamburger Button */}
         <button
           className="sm:hidden text-white"
+          title='drop down menu'
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
