@@ -11,7 +11,7 @@ function LandingPage() {
             <HeroSection />
             <div>
                 <section class=" py-6 px-4 sm:px-6 lg:px-8 ">
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 py-8">
+                    <div className="flex flex-col md:flex-row items-center justify-center  px-4 py-8">
                         {/* Image */}
                         <div id="landing-img">
                             <picture>
@@ -40,7 +40,7 @@ function LandingPage() {
 
                             {/* Button */}
                             <div id="landing-btn">
-                                <Link to='/contact'>
+                                <Link  onClick={() => window.scrollTo(0, 0)} to='/contact'>
                                     <button>
                                         Get a Free Estimate
                                     </button>
@@ -55,6 +55,9 @@ function LandingPage() {
                     </div>
 
 
+                </section>
+                <section className="flex justify-center">
+                    <Link  onClick={() => window.scrollTo(0, 0)} to='/about-us' id="about-us-btn">Learn About Us</Link>
                 </section>
 
                 <section className="px-4 py-8">
@@ -108,7 +111,7 @@ function LandingPage() {
                 </section>
 
                 <div className="flex justify-center ">
-                    <Link
+                    <Link onClick={() => window.scrollTo(0, 0)}
                     id="call-button"
                     to="/contact"
                     >

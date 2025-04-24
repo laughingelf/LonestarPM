@@ -7,14 +7,14 @@ const Footer = () => {
           {/* Left side: Links & Buttons */}
           <div className="w-full flex flex-col items-center md:items-start text-center md:text-left space-y-4">
             <div className="flex flex-wrap gap-4 text-sm font-medium">
-              <Link to='/about-us' className="hover:underline">About Us</Link>
+              <Link onClick={() => window.scrollTo(0, 0)} to='/about-us' className="hover:underline">About Us</Link>
               {/* <Link to='/testimonials' className="hover:underline">Testimonials</Link> */}
-              <Link to='/services' className="hover:underline">Services</Link>
-              <Link to='/contact' className="hover:underline">Contact Us</Link>
+              <Link onClick={() => window.scrollTo(0, 0)} to='/services' className="hover:underline">Services</Link>
+              <Link onClick={() => window.scrollTo(0, 0)} to='/contact' className="hover:underline">Contact Us</Link>
               <p>Operating 7 days a week</p>
             </div>
             <div className="flex gap-4 flex-wrap justify-center">
-              <Link to='/contact' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md transition">Get a Free Quote</Link>
+              <Link onClick={() => window.scrollTo(0, 0)} to='/contact' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md transition">Get a Free Quote</Link>
               <a
                 href="tel:8178793087"
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-md transition"

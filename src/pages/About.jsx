@@ -24,15 +24,15 @@ const About = () => {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-8">
 
             {/* Image Section */}
-            <div id="landing-img">
+            <div id="landing-img" className="-translate-x-8">
             <picture>
-              <source srcSet="/img/mission.webp" type="image/webp" />
+              <source srcSet="/img/mascot-about-lg.png" type="image/webp" />
 
               <img
-              src="/img/mission.jpg" // replace with your image path
+              src="/img/mascot-about-lg.png" // replace with your image path
               alt="Mission-img"
               loading="eager"
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-xl border-2 border-black"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg "
               />
               </picture>
             </div>
@@ -68,7 +68,7 @@ const About = () => {
 
               {/* Buttons */}
               <div className="mt-8 text-center flex flex-col items-center sm:flex-row sm:justify-center lg:justify-start gap-4">
-                <Link to='/contact'>
+                <Link  onClick={() => window.scrollTo(0, 0)} to='/contact'>
                   Request a Free Quote
                 </Link>
                 <a href="tel:8178793087">
@@ -92,14 +92,12 @@ const About = () => {
             <div className="max-w-7xl mx-auto">
               <h2 style={{fontFamily: 'Rye, serif'}} className="text-5xl text-shadow-lg font-bold mb-10 text-center underline">Our Mission & Values</h2>
               
-              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
+              <div className="flex justify-center items-center lg:items-start gap-10">
                 {/* Image */}
-                <div id="landing-img">
-                  <img src="/img/mission.jpg" alt="Our Mission"  />
-                </div>
+               
 
                 {/* Text Content */}
-                <div id="mission-text" className=" w-full lg:w-1/2 space-y-6 text-lg leading-relaxed md:mr-24 p-12 rounded-lg shadow-lg">
+                <div id="mission-text" className=" w-full lg:w-1/2 space-y-6 text-lg leading-relaxed  p-12 rounded-lg shadow-lg">
                   <p>
                     At <span style={{fontFamily: 'Rye, serif'}} className="text-red-600 text-md underline text-shadow-lg">Lonestar Property Management</span>, our mission is to deliver high-quality, reliable exterior cleaning and property maintenance 
                     services that protect and enhance the value of every home and business we touch. We’re committed to honest work, exceptional 

@@ -81,7 +81,7 @@ const Services = () => {
           
           {/* Request a Free Quote Button */}
           <div id="buttons" className="mt-12 text-center flex flex-col items-center sm:flex-row sm:justify-center sm:gap-4">
-            <Link to='/contact'>
+            <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>
                 Get a Free Quote
             </Link>
             <a href="tel:8178793087">

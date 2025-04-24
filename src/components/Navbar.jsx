@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo + Brand */}
         <div className="flex items-center gap-3">
         <img className='h-12 w-auto' src='/img/nav-mascot.svg' alt='Lonestar Mascot' />
-        <Link to="/home">Lonestar Property Management</Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/home">Lonestar Property Management</Link>
         </div>
 
         {/* Hamburger Button */}
@@ -41,11 +41,11 @@ export default function Navbar() {
             isOpen ? 'flex bg-gray-500' : 'hidden'
           } flex-col pl-4 absolute top-16 left-0 w-full  z-50 transition-all duration-300 ease-in-out sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto`}
         >
-          <Link to="/home">Home</Link>
-          <Link to="/about-us">About Us</Link>
+          <Link onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link>
+          <Link onClick={() => window.scrollTo(0, 0)} to="/about-us">About Us</Link>
           {/* <Link to="/testimonials" className="px-4 py-2 hover:text-gray-400">Testimonials</Link> */}
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact Us</Link>
+          <Link onClick={() => window.scrollTo(0, 0)} to="/services">Services</Link>
+          <Link onClick={() => window.scrollTo(0, 0)} to="/contact">Contact Us</Link>
         </div>
       </div>
     </nav>

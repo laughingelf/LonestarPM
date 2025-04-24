@@ -236,6 +236,26 @@
   }
 }
 
+#about-us-btn {
+  background-color: rgb(25, 0, 255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  font-size: x-large;
+  border-radius: 15px;
+  box-shadow: 0 0 5px black;
+}
+
+#about-us-btn:hover {
+  box-shadow: 0 0 10px black;
+  transition: all 200ms;
+  color: rgb(220, 38, 38);
+  text-decoration: underline;
+}
+
 #landing-card,
 #about-card {
   background-color: white;
