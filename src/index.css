@@ -153,6 +153,10 @@
   margin-bottom: .5rem;
 }
 
+#cowboy {
+  font-family: "Rye", serif;
+}
+
 #about-hero p {
   font-size: 2vw;
 }
@@ -353,6 +357,7 @@
   }
 }
 
+
 .landing-info {
   background-color: white;
   padding: 2rem;
@@ -369,6 +374,11 @@
   text-shadow: 0 10px 15px rgba(0, 10, 0, 0.333);
   text-align: center;
   margin-bottom: .7rem;
+}
+
+#learn-lnk {
+  color: rgb(220, 38, 38);
+  font-size: 1.5vw;
 }
 
 .landing-info p {

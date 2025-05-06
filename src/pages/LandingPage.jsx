@@ -57,7 +57,7 @@ function LandingPage() {
 
                 </section>
                 <section className="flex justify-center">
-                    <Link  onClick={() => window.scrollTo(0, 0)} to='/about-us' id="about-us-btn">Learn About Us</Link>
+                    <Link  onClick={() => window.scrollTo(0, 0)} to='/about-us' id="about-us-btn">Who We Are</Link>
                 </section>
 
                 <section className="px-4 py-8">
@@ -72,6 +72,7 @@ function LandingPage() {
                                 your property with services like concrete sealing, haul off, and full property maintenance to keep your space looking
                                 its best. Let us help you with quick, hassle-free estimates that give you peace of mind and a job well done.
                             </p>
+                            <Link to='/contact' className=""><p id="learn-lnk" className="hover:translate-x-2">Learn More →</p> </Link>
                         </div>
 
                         <div class='landing-info'>
@@ -84,6 +85,7 @@ function LandingPage() {
                             it’s our own — with respect, attention to detail, and a true Texas work ethic. When you choose Lonestar, you're choosing a team your
                              community already counts on.
                             </p>
+                            <Link to='/contact' className=""><p id="learn-lnk" className="hover:translate-x-2">Learn More →</p> </Link>
                         </div>
 
                         <div class='landing-info'>
@@ -95,6 +97,7 @@ function LandingPage() {
                               equipment and eco-friendly products to ensure the job is done right the first time. You can count on us for dependable service, clear communication,
                                and a commitment to exceeding your expectations every time.
                             </p>
+                            <Link to='/contact' className=""><p id="learn-lnk" className="hover:translate-x-2">Learn More →</p> </Link>
                         </div>
 
                         <div class='landing-info'>
@@ -106,6 +109,7 @@ function LandingPage() {
                               techniques and equipment to ensure that nothing is harmed, leaving your property looking spotless and well-maintained. Your satisfaction and peace
                                of mind are our top priorities.
                             </p>
+                            <Link to='/contact' className=""><p id="learn-lnk" className="hover:translate-x-2">Learn More →</p> </Link>
                         </div>
                     </div>
                 </section>

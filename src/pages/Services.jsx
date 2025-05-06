@@ -2,24 +2,26 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollingGallery from "../components/ScrollingGallery";
 import { Link } from 'react-router-dom';
+import ServicesHero from "../components/ServicesHero";
 
 const Services = () => {
   return (
     <>
       <Navbar />
+      <ServicesHero/>
       <div
-        className="min-h-screen bg-cover bg-center bg-no-repeat pb-6 pt-6 md:pt-10"
-        style={{
-          backgroundImage: "url('/img/lspm-header2.png')",
-          backgroundSize: 'cover', // Ensures image covers full screen
-          backgroundPosition: 'center',
-          // backgroundAttachment: 'fixed' // Keeps the image fixed while scrolling
-        }}
+        className="min-h-screen bg-cover bg-center bg-gray-300 bg-no-repeat pb-6 pt-6 md:pt-10"
+        // style={{
+        //   backgroundImage: "url('/img/lspm-header2.png')",
+        //   backgroundSize: 'cover', // Ensures image covers full screen
+        //   backgroundPosition: 'center',
+        //   // backgroundAttachment: 'fixed' // Keeps the image fixed while scrolling
+        // }}
       >
         {/* <ScrollingGallery/> */}
         <div id="services" className="bg-gray-100 bg-opacity-30 text-black py-12 px-6 rounded-lg shadow-lg max-w-5xl mx-auto mb-10">
           <h2>Our Services</h2>
-          <div className="grid md:grid-cols-2 gap-8 auto-rows-fr">
+          <div className="grid md:grid-cols-2 gap-8 auto-rows-fr mt-12">
             <div class='service'>
               <h3>Soft Washing</h3>
               <p>

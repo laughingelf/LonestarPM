@@ -2,14 +2,16 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from 'react-router-dom';
+import AboutHero from "../components/AboutHero";
 
 const About = () => {
   return (
     <>
       <Navbar />
+      <AboutHero/>
       <div>
 
-        <section id='about-hero'>
+        {/* <section id='about-hero'>
           <div className="bg-black/60 w-full h-full">
             <div className="max-w-5xl mx-auto text-center px-4 py-16 sm:py-20">
               <h1>About Us</h1>
@@ -18,7 +20,7 @@ const About = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="px-6 py-12 bg-gray-100">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-8">
@@ -26,7 +28,7 @@ const About = () => {
             {/* Image Section */}
             <div id="landing-img" className="-translate-x-8">
             <picture>
-              <source srcSet="/img/mascot-about-lg.png" type="image/webp" />
+              <source srcSet="/img/mascot-about-lg.png" type="image/png" />
 
               <img
               src="/img/mascot-about-lg.png" // replace with your image path
@@ -112,6 +114,14 @@ const About = () => {
                     <li>Customer-First Service</li>
                   </ul>
                 </div>
+              </div>
+              <div className="flex justify-center mt-12">
+                <Link
+                  to="/contact"
+                  className="bg-red-600 text-2xl hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-110 transition"
+                >
+                  Contact Us Today!
+                </Link>
               </div>
             </div>
           </div>

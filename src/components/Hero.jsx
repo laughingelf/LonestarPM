@@ -7,7 +7,7 @@ const HeroSection = () => {
 
     return (
 
-        <section className="relative w-full h-screen " >
+        <section className="relative w-full h-screen md:h-[70vh] " >
              {/* Background Image Behind Cards */}
              <picture>
                 <source media="(min-width: 1024px)" srcSet="/img/lspm-header2.webp" type="image/webp" />
