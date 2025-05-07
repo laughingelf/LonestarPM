@@ -378,7 +378,13 @@
 
 #learn-lnk {
   color: rgb(220, 38, 38);
-  font-size: 1.5vw;
+  font-size: 2vw;
+}
+
+@media (max-width: 640px) {
+  #learn-lnk {
+    font-size: 6vw; /* or another suitable value */
+  }
 }
 
 .landing-info p {
