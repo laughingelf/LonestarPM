@@ -111,11 +111,11 @@
 
 @media (max-width: 480px) {
   #hero-head h1 {
-    font-size: 8vw;
+    font-size: 4vw;
   }
 
   #hero-head h2 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   #landing-card h2 {
     font-size: 6.5vw;
@@ -124,7 +124,7 @@
 
 @media (max-width: 1080px) {
   #hero-head h1 {
-    font-size: 8vw;
+    font-size: 4.2vw;
   }
 }
 
