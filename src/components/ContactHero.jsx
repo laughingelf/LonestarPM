@@ -13,10 +13,10 @@ const ContactHero = () => {
   
         {/* Content */}
         <div className="relative z-20 max-w-2xl text-center text-white space-y-6">
-          <h1 id="cowboy" className="text-4xl sm:text-5xl font-bold text-shadow">
+          <h1 id="cowboy" className="text-4xl md:text-6xl font-bold text-shadow">
             Get in Touch with LoneStar Property Management
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200">
+          <p className="text-xl md:text-3xl text-gray-200">
             Whether you’re looking for property services or have a question, we’re here to help. Reach out today — let’s talk about how we can serve you.
           </p>
         </div>

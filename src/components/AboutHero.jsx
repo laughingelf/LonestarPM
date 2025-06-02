@@ -15,15 +15,15 @@ const AboutHero = () => {
   
         {/* Content */}
         <div className="relative z-20 max-w-3xl text-center text-white space-y-6">
-          <h1 id="cowboy" className="text-4xl sm:text-5xl font-bold text-shadow">
+          <h1 id="cowboy" className="text-5xl md:text-7xl font-bold text-shadow">
             The LoneStar Difference
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200">
+          <p className="text-xl md:text-3xl text-gray-200">
             At LoneStar Property Management, we take pride in providing reliable, top-quality property solutions across Texas. Learn more about our mission, values, and the people who make it all happen.
           </p>
           <Link
             to='/contact'
-            className="inline-block bg-red-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-110 transition"
+            className="text-2xl inline-block bg-red-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-110 transition"
           >
             Contact Us Today!
           </Link>

@@ -1,5 +1,6 @@
 import { PanelsRightBottom } from "lucide-react"
 import { Link } from "react-router-dom"
+import { ArrowRight } from 'lucide-react';
 
 
 const HeroSection = () => {
@@ -7,7 +8,7 @@ const HeroSection = () => {
 
     return (
 
-        <section className="relative w-full h-screen md:h-[80vh] " >
+        <section className="relative w-full h-[60vh] md:h-[60vh] " >
              {/* Background Image Behind Cards */}
              <picture>
                 <source media="(min-width: 1024px)" srcSet="/img/lspm-header2.webp" type="image/webp" />
@@ -15,51 +16,38 @@ const HeroSection = () => {
                 <img 
                     src="/img/lspm-header2-sm.png" 
                     type='image/png'
-                    alt="Lonestar Property Management" 
+                    alt="Lone Star Property Maintenance" 
                     className="absolute inset-0 w-full h-full object-cover z-0" 
                 />
              </picture>
             {/* Overlay */}
-            <div id="hero-cards" className="bg-black/40 absolute inset-0 z-10">
-                {/* Headline */}
-                <div id="hero-head">
-                <h1>Lonestar Property Management</h1>
-                <h2>Property Maintenance You Can Count On</h2>
-                {/* <p className="text-lg md:text-xl max-w-2xl">Serving Texas with professional power washing, soft washing, haul-offs, fencing, and more.</p> */}
-                </div>
-
-                {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl items-stretch">
-                {/* Card 1 */}
-                <Link onClick={() => window.scrollTo(0, 0)} class='service-cards' to='/contact'>
-                    <div class='service-card'>
-                        <h3>Pressure Washing</h3>
-                        <p>Revitalize driveways, patios, and exteriors with our deep-clean pressure washing services.</p>
-                    </div>
-                </Link>
-                {/* Card 2 */}
-                <Link onClick={() => window.scrollTo(0, 0)} class='service-cards' to='/contact'>
-                    <div class='service-card'>
-                        <h3>Auto/Boat Detailing</h3>
-                        <p>Professional detailing for vehicles and boats. We bring back that showroom shine inside and out—perfect for personal or resale use.</p>
-                    </div>
-                </Link>
-                {/* Card 3 */}
-                <Link onClick={() => window.scrollTo(0, 0)} class='service-cards' to='/contact'>
-                    <div class='service-card'>
-                        <h3>Fencing & Maintenance</h3>
-                        <p>Professional fence installs and property maintenance to keep your place looking sharp.</p>
-                    </div>
-                </Link>
-                {/* Card 4 */}
-                <Link onClick={() => window.scrollTo(0, 0)} class='service-cards' to='/contact'>
-                    <div class='service-card'>
-                        <h3>Haul-Off Services</h3>
-                        <p>Quick and reliable junk removal, clean-up, and haul-off jobs for homes and businesses.</p>
-                    </div>
-                </Link>
-                </div>
+            <div id="hero-cards" className="bg-black/60 absolute inset-0 z-10 flex flex-col items-start">
+            {/* Headline */}
+            <div id="hero-head" className="p-2">
+                <h1 className="text-5xl md:text-8xl mb-4 md:mb-6 w-fit md:w-[70rem] py-6 rounded-lg">
+                    Lone Star Property Maintenance
+                </h1>
+                <h2 className="text-2xl md:text-5xl">
+                    Property Maintenance You Can Count On
+                </h2>
             </div>
+            
+            {/* Button */}
+            <div className="mt-4 flex flex-col text-center md:flex-row gap-4">
+                <Link onClick={() => window.scrollTo(0, 0)} to='/contact'
+                className="text-3xl bg-blue-700 w-[18rem] md:w-[20rem] py-2 md:py-4 rounded-lg shadow-md shadow-black hover:scale-105 hover:shadow-lg transition">
+                    <button>
+                        Get a Free Estimate
+                    </button>
+                </Link>
+                <a className="text-3xl bg-blue-700 w-[18rem] md:w-[20rem] py-2 md:py-4 rounded-lg shadow-md shadow-black hover:scale-105 hover:shadow-lg transition" href="tel:8178793087">
+                    <button>
+                        Call Us: (817) 879-3087
+                    </button>
+                </a>
+            </div>
+        </div>
+
         </section>
 
 

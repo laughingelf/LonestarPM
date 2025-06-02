@@ -15,15 +15,15 @@ const ServicesHero = () => {
   
         {/* Content */}
         <div className="relative z-20 max-w-3xl text-center text-white space-y-6">
-          <h1 id="cowboy" className="text-4xl sm:text-5xl font-bold text-shadow">
+          <h1 id="cowboy" className="text-4xl md:text-7xl font-bold text-shadow">
             Professional Property Services You Can Count On
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200">
+          <p className="text-xl md:text-3xl text-gray-200">
             At LoneStar Property Management, we take pride in delivering reliable, top-tier maintenance and management services across Texas. Your property is our priority.
           </p>
           <Link
             to='/contact'
-            className="inline-block bg-red-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-110 transition"
+            className="inline-block bg-red-600 text-2xl hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-110 transition"
           >
             Contact Us Today!
           </Link>

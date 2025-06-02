@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-      <footer className="bg-gray-500 text-white py-10 px-6">
+      <footer className="bg-gray-500 text-white py-10 px-6 text-xl">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left gap-8">
           {/* Left side: Links & Buttons */}
           <div className="w-full flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-            <div className="flex flex-wrap gap-4 text-sm font-medium">
+            <div className="flex flex-wrap gap-4 text-lg md:text-xl font-medium">
               <Link onClick={() => window.scrollTo(0, 0)} to='/about-us' className="hover:underline">About Us</Link>
               {/* <Link to='/testimonials' className="hover:underline">Testimonials</Link> */}
               <Link onClick={() => window.scrollTo(0, 0)} to='/services' className="hover:underline">Services</Link>

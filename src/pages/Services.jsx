@@ -19,62 +19,62 @@ const Services = () => {
         // }}
       >
         {/* <ScrollingGallery/> */}
-        <div id="services" className="bg-gray-100 bg-opacity-30 text-black py-12 px-6 rounded-lg shadow-lg max-w-5xl mx-auto mb-10">
-          <h2>Our Services</h2>
+        <div id="services" className="text-xl bg-gray-100 bg-opacity-30 text-black py-12 px-6 rounded-lg shadow-lg max-w-5xl mx-auto mb-10">
+          <h2 className="text-4xl md:text-5xl">Our Services</h2>
           <div className="grid md:grid-cols-2 gap-8 auto-rows-fr mt-12">
             <div class='service'>
-              <h3>Soft Washing</h3>
+              <h3 className="text-2xl md:text-3xl">Soft Washing</h3>
               <p>
                 A gentle cleaning method ideal for roofs and delicate surfaces, using eco-friendly solutions to eliminate mold, mildew, and grime without damage.
               </p>
             </div>
 
             <div class='service'>
-              <h3>Pressure Washing</h3>
+              <h3 className="text-2xl md:text-3xl"> Pressure Washing</h3>
               <p>
                 High-powered cleaning for driveways, sidewalks, decks, and other hard surfaces. Restore your property’s appearance with ease and efficiency.
               </p>
             </div>
 
             <div class='service'>
-              <h3>Fencing</h3>
+              <h3 className="text-2xl md:text-3xl">Fencing</h3>
               <p>
                 From installation to repairs and cleaning, we offer comprehensive fencing services to enhance your property’s privacy and curb appeal.
               </p>
             </div>
 
             <div class='service'>
-              <h3>All Property Maintenance</h3>
+              <h3 className="text-2xl md:text-3xl">All Property Maintenance</h3>
               <p>
                 We provide full-service property maintenance to keep your home or business in top shape—inside and out. Ask about our custom packages!
               </p>
             </div>
 
             <div class='service'>
-              <h3>Haul Off</h3>
+              <h3 className="text-2xl md:text-3xl">Haul Off</h3>
               <p>
                 Whether you're clearing a construction site or just doing spring cleaning, we haul off debris, junk, and unwanted materials quickly and efficiently.
               </p>
             </div>
 
             <div class='service'>
-              <h3>Auto/Boat Detailing</h3>
+              <h3 className="text-2xl md:text-3xl">Auto/Boat Detailing</h3>
               <p>
                 Professional detailing for vehicles and boats. We bring back that showroom shine inside and out—perfect for personal or resale use.
               </p>
             </div>
 
             <div class='service'>
-              <h3>Concrete Sealing</h3>
+              <h3 className="text-2xl md:text-3xl">Concrete Sealing</h3>
               <p>
                 Extend the life of your concrete surfaces with our sealing services. Protect against stains, weathering, and cracks while enhancing appearance.
               </p>
             </div>
 
             <div class='service'>
-              <h3>Other Services</h3>
+              <h3 className="text-2xl md:text-3xl">Other Services</h3>
               <p>
-              At Lonestar Property Management, we offer a wide range of services beyond what’s listed on our site. If you’ve got a project in mind, give us a call—we’re 
+              At Lone Star Property Maintenance, we offer a wide range of services beyond what’s listed on our site. If you’ve got a project in mind, give us a call—we’re 
               happy to talk it through and see how we can help. If we can do it, we will.
               </p>
             </div>

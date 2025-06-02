@@ -16,7 +16,7 @@ const About = () => {
             <div className="max-w-5xl mx-auto text-center px-4 py-16 sm:py-20">
               <h1>About Us</h1>
               <p className="text-base sm:text-lg max-w-2xl mx-auto">
-                Lonestar Property Management is built on trust, hard work, and Texas pride. Learn about our mission and how we serve our community.
+                Lone Star Property Maintenance is built on trust, hard work, and Texas pride. Learn about our mission and how we serve our community.
               </p>
             </div>
           </div>
@@ -40,11 +40,11 @@ const About = () => {
             </div>
 
             {/* Text Section */}
-            <div id="about-card">
+            <div id="about-card" className="text-lg md:text-xl">
               <div>
-                <h2>Who We Are</h2>
+                <h2 className="text-3xl md:text-5xl">Who We Are</h2>
                 <p>
-                  At Lonestar Property Management, we're proud to be a family-owned and operated business based in Fort Worth, Texas. We 
+                  At Lone Star Property Maintenance, we're proud to be a family-owned and operated business based in Fort Worth, Texas. We 
                   serve the DFW area and the surrounding communities, bringing our passion for quality work and customer service to every 
                   job. Our values are rooted in hard work, honesty, and the desire to make a positive impact on the properties we service. 
                   We believe in treating every home and business like it's our own, ensuring you get the highest level of care and attention.
@@ -99,14 +99,14 @@ const About = () => {
                
 
                 {/* Text Content */}
-                <div id="mission-text" className=" w-full lg:w-1/2 space-y-6 text-lg leading-relaxed  p-12 rounded-lg shadow-lg">
+                <div id="mission-text" className="bg-gray-300 text-xl w-full lg:w-1/2 space-y-6 text-lg leading-relaxed  p-12 rounded-lg shadow-lg">
                   <p>
-                    At <span style={{fontFamily: 'Rye, serif'}} className="text-red-600 text-md underline text-shadow-lg">Lonestar Property Management</span>, our mission is to deliver high-quality, reliable exterior cleaning and property maintenance 
+                    At <span style={{fontFamily: 'Rye, serif'}} className="text-red-600 text-2xl md:text-3xl underline text-shadow-lg">Lone Star Property Maintenance</span>, our mission is to deliver high-quality, reliable exterior cleaning and property maintenance 
                     services that protect and enhance the value of every home and business we touch. We’re committed to honest work, exceptional 
                     results, and building lasting relationships with our community through trust, integrity, and Texas-sized customer care.
                   </p>
                   
-                  <ul className="list-disc list-inside space-y-2 font-semibold">
+                  <ul className="list-disc list-inside space-y-2 font-semibold text-2xl underline">
                     <li>Integrity First</li>
                     <li>Quality You Can Count On</li>
                     <li>Hard Work, Always</li>

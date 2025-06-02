@@ -17,12 +17,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id='navbar'>
+    <nav id='navbar' className=''>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo + Brand */}
         <div className="flex items-center gap-3">
-        <img className='h-12 w-auto' src='/img/nav-mascot.svg' alt='Lonestar Mascot' />
-        <Link onClick={() => window.scrollTo(0, 0)} to="/home">Lonestar Property Management</Link>
+        <img className='h-16 md:h-20 w-auto' src='/img/nav-mascot.svg' alt='Lonestar Mascot' />
+        <Link className='text-xl md:text-2xl' onClick={() => window.scrollTo(0, 0)} to="/home">Lonestar Property Management</Link>
         </div>
 
         {/* Hamburger Button */}
@@ -39,7 +39,7 @@ export default function Navbar() {
           ref={menuRef}
           className={`${
             isOpen ? 'flex bg-gray-500' : 'hidden'
-          } flex-col pl-4 absolute top-16 left-0 w-full  z-50 transition-all duration-300 ease-in-out sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto`}
+          } flex-col pl-4 absolute top-22 left-0 w-full  z-50 transition-all duration-300 ease-in-out sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto text-xl`}
         >
           <Link onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link>
           <Link onClick={() => window.scrollTo(0, 0)} to="/about-us">About Us</Link>

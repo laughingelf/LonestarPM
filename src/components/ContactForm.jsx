@@ -77,7 +77,7 @@ const ContactForm = () => {
         </p>
       </SuccessModal>
 
-      <form onSubmit={handleSubmit} name="contact" data-netlify="true" encType="multipart/form-data" className="space-y-6" id="contact-form">
+      <form onSubmit={handleSubmit} name="contact" data-netlify="true" encType="multipart/form-data" className="space-y-6 text-xl" id="contact-form">
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="grid md:grid-cols-2 gap-4">
