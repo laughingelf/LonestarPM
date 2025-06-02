@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo + Brand */}
         <div className="flex items-center gap-3">
         <img className='h-16 md:h-20 w-auto' src='/img/nav-mascot.svg' alt='Lonestar Mascot' />
-        <Link className='text-xl md:text-2xl' onClick={() => window.scrollTo(0, 0)} to="/home">Lonestar Property Management</Link>
+        <Link className='text-xl md:text-2xl' onClick={() => window.scrollTo(0, 0)} to="/home">Lone Star Property Maintenance</Link>
         </div>
 
         {/* Hamburger Button */}
