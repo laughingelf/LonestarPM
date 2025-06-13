@@ -6,6 +6,8 @@ import Contact from "./pages/Contact"
 import Services from "./pages/Services"
 import Testimonials from "./pages/Testimonials"
 import NoPage from './pages/NoPage'
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 ///import './App.css'
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
 
 
         <BrowserRouter>
+        <Navbar />
           <Routes>
             <Route index element={<LandingPage/>} />
             <Route path='/home' element={<LandingPage/>} />
@@ -25,6 +28,7 @@ function App() {
             <Route path='/testimonials' element={<Testimonials/>} />
             <Route path='*' element={<NoPage/>} />
           </Routes>
+        <Footer />
         </BrowserRouter>
 
 

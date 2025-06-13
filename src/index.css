@@ -13,6 +13,12 @@
   font-style: normal;
 }
 
+.header-font {
+  font-family: "Rye", serif;
+  font-weight: 400;
+}
+
+
 :root {
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: "Special Gothic Condensed One", sans-serif;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ScrollingGallery = () => {
   const imageCount = 23;
@@ -19,46 +20,53 @@ const ScrollingGallery = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto py-8">
-      {/* Main Image */}
-      <div className="relative mb-6 ">
-        <div className="relative mb-6 flex items-center justify-center">
-          <img
+    <section className="w-full max-w-5xl mx-auto px-4 py-12">
+      {/* Main Image Display */}
+      <div className="relative overflow-hidden rounded-2xl shadow-xl bg-black">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={images[currentIndex]}
             src={images[currentIndex]}
-            alt={`Main Gallery ${currentIndex + 1}`}
-            className="w-auto h-[70vh] object-contain rounded-xl bg-black"
+            alt={`Gallery ${currentIndex + 1}`}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.4 }}
+            className="w-full h-[70vh] object-contain rounded-2xl"
           />
-        </div>
-        {/* Arrows */}
+        </AnimatePresence>
+
+        {/* Nav Arrows */}
         <button
           onClick={goToPrevious}
-          className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-black hover:bg-red-600 p-2 rounded-full shadow"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white p-2 rounded-full shadow transition"
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-7 h-7" />
         </button>
         <button
           onClick={goToNext}
-          className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-black hover:bg- p-2 rounded-full shadow"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white p-2 rounded-full shadow transition"
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronRight className="w-7 h-7" />
         </button>
       </div>
 
-      {/* Thumbnail Strip */}
-      <div className="flex overflow-x-auto scrollbar-hide space-x-3 px-2">
+      {/* Thumbnail Navigation */}
+      <div className="mt-6 flex overflow-x-auto scrollbar-hide space-x-3 py-2 px-1">
         {images.map((img, i) => (
-          <img
+          <motion.img
             key={i}
             src={img}
-            alt={`Thumb ${i + 1}`}
+            alt={`Thumbnail ${i + 1}`}
             onClick={() => setActiveImage(i)}
-            className={`w-24 h-16 object-cover rounded-md cursor-pointer border-2 ${
-              currentIndex === i ? 'border-blue-500' : 'border-transparent'
+            whileHover={{ scale: 1.05 }}
+            className={`w-24 h-16 object-cover rounded-md cursor-pointer border-2 transition-all duration-200 ${
+              currentIndex === i ? 'border-blue-600 ring ring-blue-300' : 'border-transparent'
             }`}
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
