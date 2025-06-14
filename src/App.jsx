@@ -8,6 +8,7 @@ import Testimonials from "./pages/Testimonials"
 import NoPage from './pages/NoPage'
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import PageTransitionWrapper from "./components/PageTransition"
 ///import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
 
         <BrowserRouter>
+        <PageTransitionWrapper />
         <Navbar />
           <Routes>
             <Route index element={<LandingPage/>} />
