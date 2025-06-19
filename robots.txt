@@ -1,0 +1,6 @@
+# robots.txt for Lone Star Property Maintenance
+
+User-agent: *
+Disallow:
+
+Sitemap: https://lonestarpropertymaintenance.com/sitemap.xml
