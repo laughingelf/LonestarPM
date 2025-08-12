@@ -10,7 +10,7 @@ const services = [
   },
   {
     title: "Pressure Washing",
-    desc: "High-powered cleaning for driveways, sidewalks, decks, and other hard surfaces. Restore your property’s appearance with ease and efficiency.",
+    desc: "High powered cleaning for driveways, sidewalks, decks, and other hard surfaces. Restore your property’s appearance with ease and efficiency.",
     img: "/img/services/pressurewashing.png",
   },
   {
@@ -20,17 +20,17 @@ const services = [
   },
   {
     title: "All Property Maintenance",
-    desc: "We provide full-service property maintenance to keep your home or business in top shape—inside and out. Ask about our custom packages!",
+    desc: "We provide full service property maintenance to keep your home or business in top shape — inside and out. Ask about our custom packages!",
     img: "/img/services/mowing.png",
   },
   {
     title: "Haul Off",
-    desc: "Whether you're clearing a construction site or just doing spring cleaning, we haul off debris, junk, and unwanted materials quickly and efficiently.",
+    desc: "Whether you are clearing a construction site or just doing spring cleaning, we haul off debris, junk, and unwanted materials quickly and efficiently.",
     img: "/img/services/hauloff.png",
   },
   {
     title: "Auto/Boat Detailing",
-    desc: "Professional detailing for vehicles and boats. We bring back that showroom shine inside and out—perfect for personal or resale use.",
+    desc: "Professional detailing for vehicles and boats. We bring back that showroom shine inside and out — perfect for personal or resale use.",
     img: "/img/services/boatdetail.jpg",
   },
   {
@@ -40,73 +40,105 @@ const services = [
   },
   {
     title: "Other Services",
-    desc: "We offer a wide range of services beyond what’s listed on our site. Got a project in mind? Give us a call—we’re happy to help.",
+    desc: "We offer a wide range of services beyond what is listed on our site. Got a project in mind? Give us a call — we are happy to help.",
     img: "/img/services/pool.jpg",
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 24 },
+  show: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.45, delay: i * 0.07 } }),
+};
+
 const ServicesSection = () => {
   return (
-    <section className="bg-gray-100 py-20 px-6">
+    <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-14 text-gray-800 header-font underline">Our Services</h2>
+        <p className="text-lg font-semibold tracking-widest text-red-600 uppercase">What We Do</p>
+        <h2 className="text-4xl md:text-5xl font-bold mt-2 text-blue-900">Our Services</h2>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {services.map((service, idx) => (
-            <motion.div
-            key={idx}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
-            >
-            <img src={service.img} alt={service.title} className="w-full h-48 object-cover" />
-            <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800 header-font">{service.title}</h3>
-                <p className="text-gray-700 text-lg mb-6 flex-grow">{service.desc}</p>
+          <motion.article
+            key={service.title}
+            custom={idx}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            className="group relative rounded-2xl bg-white ring-1 ring-gray-300 shadow-lg overflow-hidden
+                      transition hover:ring-gray-400 hover:shadow-xl"
+          >
+            {/* brand accent */}
+            <span className="pointer-events-none absolute inset-x-0 top-0 h-1.5 rounded-t-2xl
+                            bg-gradient-to-r from-red-600 via-blue-700 to-gray-500" />
 
-                <motion.div
-                whileHover={{ x: 6 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                >
-                <Link
-                    to="/contact"
-                    onClick={() => window.scrollTo(0, 0)}
-                    className="text-blue-700 text-lg hover:text-blue-900 font-semibold inline-flex items-center gap-1 transition-colors"
-                >
-                    Contact Us <ArrowRight size={18} />
-                </Link>
-                </motion.div>
+            {/* Make whole card clickable */}
+            <Link
+              to={`/contact?service=${encodeURIComponent(service.title)}`}
+              onClick={() => window.scrollTo(0, 0)}
+              className="absolute inset-0 z-10"
+              aria-label={`Get a quote for ${service.title}`}
+            />
+
+            {/* Image */}
+            <div className="relative">
+              <img
+                src={service.img}
+                alt={service.title}
+                className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
             </div>
-            </motion.div>
-          ))}
+
+            {/* Text area with subtle woodgrain */}
+            <div className="relative p-6">
+              <img
+                src="/img/woodgrain.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                style={{ opacity: 0.12 }}
+              />
+              <div className="relative z-0">
+                <h3 className="text-2xl font-bold mb-2 text-blue-800">{service.title}</h3>
+                <p className="text-gray-800 text-base md:text-lg">
+                  {service.desc}
+                </p>
+
+                {/* Optional: very light micro-CTA, hidden on desktop until hover */}
+                <div className="mt-4">
+                  <span className="text-blue-700 text-lg font-semibold inline-flex items-center gap-1
+                                  md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    Get quote →
+                  </span>
+                </div>
+              </div>
+            </div>
+          </motion.article>
+        ))}
+
         </div>
 
         {/* CTA Buttons */}
         <div className="mt-16 flex flex-col sm:flex-row justify-center gap-6">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
+          <motion.div whileHover={{ scale: 1.04, y: -1 }} whileTap={{ scale: 0.97 }}>
             <Link
               onClick={() => window.scrollTo(0, 0)}
               to="/contact"
-              className="bg-blue-700 hover:bg-blue-800 text-white text-xl font-semibold px-6 py-3 rounded-lg shadow-md transition"
+              className="inline-flex items-center justify-center rounded-full bg-red-600 hover:bg-red-700
+                         text-white text-xl font-semibold px-6 py-3 shadow-md"
             >
               Get a Free Quote
             </Link>
           </motion.div>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
+          <motion.div whileHover={{ scale: 1.04, y: -1 }} whileTap={{ scale: 0.97 }}>
             <a
-              href="tel:8178793087"
-              className="bg-green-600 hover:bg-green-700 text-white text-xl font-semibold px-6 py-3 rounded-lg shadow-md transition"
+              href="tel:18178793087"
+              className="inline-flex items-center justify-center rounded-full bg-white text-blue-700
+                         border-2 border-blue-700 hover:bg-blue-700 hover:text-white
+                         text-xl font-semibold px-6 py-3 shadow-sm transition"
             >
               Call Us: (817) 879-3087
             </a>
