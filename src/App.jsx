@@ -9,6 +9,7 @@ import NoPage from './pages/NoPage'
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import PageTransitionWrapper from "./components/PageTransition"
+import Materials from "./pages/Materials"
 ///import './App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path='/contact' element={<Contact/>} />
             <Route path='/services' element={<Services/>} />
             <Route path='/testimonials' element={<Testimonials/>} />
+            <Route path="/materials-pricing" element={<Materials />} />
             <Route path='*' element={<NoPage/>} />
           </Routes>
         <Footer />
