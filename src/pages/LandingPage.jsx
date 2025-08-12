@@ -17,7 +17,7 @@ function LandingPage() {
             <WhyWeDoSection />
             <ScrollingGallery/>
             <LandingInfo />
-            <CTAButton />
+            {/* <CTAButton /> */}
         </div>
     )
 }
