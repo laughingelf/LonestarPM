@@ -112,7 +112,7 @@ export default function BulkMaterialsPricing() {
             <div className="p-6 border-b">
               <h3 className="text-2xl font-bold text-blue-800">Materials (10+ yards)</h3>
               <p className="text-sm text-gray-600 mt-1">
-                Prices shown include a <span className="font-semibold text-blue-700">30% </span>materials markup.
+                {/* Prices shown include a <span className="font-semibold text-blue-700">30% </span>materials markup. */}
               </p>
             </div>
             <div className="p-6">
@@ -138,7 +138,7 @@ export default function BulkMaterialsPricing() {
             <div className="p-6 border-b">
               <h3 className="text-2xl font-bold text-blue-800">Hauling Rates</h3>
               <p className="text-sm text-gray-600 mt-1">
-                Includes a <span className="font-semibold text-blue-700">$10</span> delivery surcharge on each bracket.
+                {/* Includes a <span className="font-semibold text-blue-700">$10</span> delivery surcharge on each bracket. */}
               </p>
             </div>
             <div className="p-6">
