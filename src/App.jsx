@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import PageTransitionWrapper from "./components/PageTransition"
 import Materials from "./pages/Materials"
+import ServiceDetailPage from "./pages/ServiceDetailPage"
 ///import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path='/services' element={<Services/>} />
             <Route path='/testimonials' element={<Testimonials/>} />
             <Route path="/materials-pricing" element={<Materials />} />
+            <Route path="/services/:slug" element={<ServiceDetailPage />} />
             <Route path='*' element={<NoPage/>} />
           </Routes>
         <Footer />
