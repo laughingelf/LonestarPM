@@ -4,7 +4,10 @@ import { Check } from "lucide-react";
 
 const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
   return (
-    <section className="bg-white text-black py-16 px-6">
+    <section
+      className="bg-white text-black py-16 px-6"
+      aria-labelledby="mission-values-heading"
+    >
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
         <motion.div
@@ -17,14 +20,23 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
           <p className="text-lg font-semibold tracking-widest text-red-600 uppercase">
             Mission and Values
           </p>
-          <h2 className="mt-2 text-4xl md:text-5xl font-bold text-blue-900">
-            Our Mission and Values
+
+          <h2
+            id="mission-values-heading"
+            className="mt-2 text-4xl md:text-5xl font-bold text-blue-900"
+          >
+            Our Mission: Reliable Property Maintenance in Fort Worth & DFW
           </h2>
+
+          <p className="mt-4 max-w-3xl mx-auto text-gray-700 text-base md:text-lg">
+            We help homeowners and businesses protect their property, improve curb appeal, and stay ahead of
+            exterior upkeep with dependable service, clear communication, and honest pricing.
+          </p>
         </motion.div>
 
         {/* Content Grid */}
         <div className="flex flex-col lg:flex-row gap-10 items-center">
-          {/* LEFT: Image (unchanged) */}
+          {/* LEFT: Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -35,13 +47,14 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
             <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 w-full aspect-video">
               <img
                 src="/img/lspm-fence.jpg"
-                alt="Lone Star crew working"
+                alt="Lone Star Property Maintenance crew working on fencing and exterior property upkeep in the Fort Worth and DFW area"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </motion.div>
 
-          {/* RIGHT: Text Card (updated styling) */}
+          {/* RIGHT: Text Card */}
           <motion.article
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -56,7 +69,7 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
               alt=""
               aria-hidden="true"
               className="absolute inset-0 h-full w-full object-cover pointer-events-none"
-              // style={{ opacity: 0.12 }}
+              style={{ opacity: 0.12 }}
             />
 
             <div className="relative z-10 rounded-2xl bg-gradient-to-b from-white/55 to-white/80 p-8 md:p-12">
@@ -68,11 +81,25 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
                 >
                   Lone Star Property Maintenance
                 </span>
-                , our mission is to deliver high quality, reliable exterior cleaning and
-                property maintenance services that protect and enhance the value of every
-                home and business we touch. We are committed to honest work, exceptional
-                results, and building lasting relationships with our community through
-                trust, integrity, and Texas sized customer care.
+                , our mission is to deliver high-quality, reliable{" "}
+                <span className="font-semibold">property maintenance</span> and{" "}
+                <span className="font-semibold">exterior cleaning</span> services that protect and enhance the
+                value of every home and business we serve across{" "}
+                <span className="font-semibold">Fort Worth, DFW, and surrounding areas</span>.
+              </p>
+
+              <p className="mb-6 text-lg md:text-xl text-gray-800 leading-relaxed">
+                From{" "}
+                <span className="font-semibold">pressure washing</span> and{" "}
+                <span className="font-semibold">soft washing</span> to{" "}
+                <span className="font-semibold">fencing</span>,{" "}
+                <span className="font-semibold">haul-off</span>, and{" "}
+                <span className="font-semibold">concrete sealing</span>, we focus on honest work, safe
+                techniques, and results that last. Want to see everything we offer?{" "}
+                <Link to="/services" className="text-blue-800 font-semibold underline underline-offset-4">
+                  View our services
+                </Link>
+                .
               </p>
 
               <ul className="mt-6 space-y-2 text-gray-800 text-lg md:text-xl">
@@ -80,8 +107,8 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
                   "Integrity First",
                   "Quality You Can Count On",
                   "Hard Work, Always",
-                  "Respect for Community",
-                  "Customer First Service",
+                  "Respect for Our Community",
+                  "Customer-First Service",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <Check className="w-5 h-5 mt-0.5 text-blue-700" />
@@ -92,8 +119,10 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
             </div>
 
             {/* brand accent */}
-            <span className="pointer-events-none absolute inset-x-0 top-0 h-1.5 rounded-t-2xl
-                             bg-gradient-to-r from-red-600 via-blue-700 to-gray-500" />
+            <span
+              className="pointer-events-none absolute inset-x-0 top-0 h-1.5 rounded-t-2xl
+                         bg-gradient-to-r from-red-600 via-blue-700 to-gray-500"
+            />
           </motion.article>
         </div>
 
@@ -107,7 +136,9 @@ const MissionSection = ({ videoSrc = "/videos/lonestar-work.mp4" }) => {
         >
           <Link
             to="/contact"
+            onClick={() => window.scrollTo(0, 0)}
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-2xl rounded-full font-semibold shadow-md transition"
+            aria-label="Contact Lone Star Property Maintenance for a free quote in Fort Worth and DFW"
           >
             Contact Us Today
           </Link>
